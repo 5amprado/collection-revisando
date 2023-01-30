@@ -8,11 +8,10 @@ e em que mês elas ocorreram (mostrar o mês por extenso: 1 – Janeiro, 2 – F
 */
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class Exercicio1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner((System.in));
         List<Double> temperaturasSemestrais = new ArrayList<Double>();
