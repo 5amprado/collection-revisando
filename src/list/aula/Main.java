@@ -1,3 +1,5 @@
+package list.aula;
+
 import java.util.*;
 
 public class Main {
@@ -20,7 +22,7 @@ public class Main {
         System.out.println(meusGatos);
 
         System.out.println("-- \tOrdem Idade\t --");
-        //Collections.sort(meusGatos, new ComparatorIdade());
+        //Collections.sort(meusGatos, new list.aula.ComparatorIdade());
         meusGatos.sort(new ComparatorIdade());
         System.out.println(meusGatos);
 
@@ -53,7 +55,7 @@ public class Main {
 
         @Override
         public String toString() {
-            return "Gato => {" +
+            return "list.aula.Gato => {" +
                     "nome:'" + nome + '\'' +
                     ", idade:" + idade +
                     ", cor:'" + cor + '\'' +

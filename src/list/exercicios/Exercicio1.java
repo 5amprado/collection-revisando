@@ -1,4 +1,4 @@
-package exercicios;
+package list.exercicios;
 
 
 
@@ -7,20 +7,18 @@ Após isto, calcule a média semestral das temperaturas e mostre todas as temper
 e em que mês elas ocorreram (mostrar o mês por extenso: 1 – Janeiro, 2 – Fevereiro e etc).
 */
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Exercicio1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner((System.in));
         List<Double> temperaturasSemestrais = new ArrayList<Double>();
-        String[] meses = {"JANEIRO","FEVEREIRO","MARÇO","ABRIL","MAIO","JUNHO"};
+        //String[] meses = {"JANEIRO","FEVEREIRO","MARÇO","ABRIL","MAIO","JUNHO"};
 
-        /*PARA DECLARAR ARRAYSLIST COM VALORES:
+        //PARA DECLARAR ARRAYSLIST COM VALORES:
         List<String> mesess = new ArrayList<String>(
                 Arrays.asList("JANEIRO","FEVEREIRO","MARÇO","ABRIL","MAIO","JUNHO"));
-         */
+
 
         double soma = 0.0;
         for(int i = 1; i <=6; i++){
@@ -36,11 +34,14 @@ public class Exercicio1 {
         System.out.println("A média das temperaturas semestrais foi de "+media+"oC");
 
         System.out.println("As Temperatiras acima desta média sao: ");
+        int count = 0;
         for(double tempa : temperaturasSemestrais){
             if(tempa > media){
-                int index = temperaturasSemestrais.indexOf(tempa);
-                System.out.println(meses[index]+" : "+tempa);
+                System.out.println(mesess.get(count) +" : "+tempa);
+                /*Simplificando o codigo, estava usando indexof para listar os meses
+                mas estava dando erro de repetição quando havia temperaturas iguais*/
             }
+            count++;
         }
 
     }
