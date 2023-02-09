@@ -27,8 +27,7 @@ Depois, mostre quantas vezes cada valor foi conseguido.
         }
 
         for(Map.Entry<Integer, Integer> entry : resultadosDicionario.entrySet()){
-            System.out.println("Resultado: " + entry.getKey() + " | Lançamentos: "
-            + entry.getValue());
+            System.out.println("Resultado: " + entry.getKey() + " | Lançamentos: ");
         }
 
 
